@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.header {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20191106/pngtree-blue-gradient-color-film-roll-creative-texture-background-image_321320.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo {
+    width: 1280px;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    padding: 20px;
+}
+.logo span {
+    font-size: 30px;
+    /* font-weight: bold; */
+}
+.search{
+    float: right;
+    margin: 10px;
+    margin-top: 0;
+    border-style: solid;
+    background-color: black;
+    border-color: black;
+    height: 30px;
+}
+.search button {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    width: 300px;
+    
+   
+    
+}
+.search input {
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    width: 270px;
+    margin: auto;
+}
+input:focus {
+    outline: 0;
+}
+.search a {
+    color: white;
+    font-size: 10px;
+    
+}
+.container-menu {
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+.backgound-menu {
+    width: 1280px;
+    
+}
+.menu {
+    display: flex;
+    color: white;
+    font-size: 20px;
+  
+    padding-left: 30px;
+    padding-right: 30px;
+   
+}
+.menu > li {
+padding: 10px 20px;
+ position: relative;
+}
+.menu-an {
+    display: none;
+   
+    
+}
+.menu li:hover .menu-an {
+    display: grid;
+    grid-template: auto / repeat(4,1fr);
+    gap: 20px;
+    position: absolute;
+   left: 0;
+   
+  
+    background-color: white;
+    color: black;
+    
+    padding: 10px;
+   width: 900px;
+
+}
+.menu li:hover {
+    background-color: white;
+    color: black;
+}
+main {
+    background-color: #000011;
+
+}
+.main  {
+    width: 1280px;
+    margin: auto;
+    
+    
+}
+.slide-container img {
+    max-width: 100%;
+}
+.slide-container{
+    width: 100%;
+  position: absolute;
+  overflow: hidden; 
+  text-align: center;
+
+}
+
+
+
+.slide-menu {
+    display: grid;
+    grid-template: auto /repeat(7,1fr);
+    gap: 10px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 900;
+
+
+}
+
+  .slide {
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: 100%;
+     z-index: 10;
+      transition: left 0s .75s;
+  }
+[id^="slide"]:checked + .slide {
+    left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
